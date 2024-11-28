@@ -1,0 +1,77 @@
+/* Estilo general */
+body {
+  font-family: Arial, sans-serif;
+  margin: 0;
+  padding: 0;
+  background: linear-gradient(135deg, #4a90e2, #50c9c3);
+  color: #fff;
+  display: flex;
+}
+
+h1 {
+  font-size: 5rem;
+  margin: 0;
+}
+
+p {
+  font-size: 1.5rem;
+}
+
+.Container {
+  display: flex;
+  justify-content: start;
+  align-items: center;
+  height: 100vh;
+  overflow: hidden;
+  gap: 300px;
+}
+
+/* Contenedor de la presentación */
+.presentation {
+  text-align: center;
+}
+
+/* Diapositivas */
+.slide {
+  display: none;
+  animation: fade 0.5s ease-in-out;
+}
+
+.slide.active {
+  display: flex;
+  flex-direction: column;
+  padding: 50px;
+}
+
+/* Botones */
+.controls {
+  display: flex;
+  justify-content: center;
+}
+
+.controls button {
+  padding: 20px 40px;
+  margin: 0 5px;
+  border: none;
+  border-radius: 50px;
+  background: #fff;
+  color: #4a90e2;
+  cursor: pointer;
+  font-size: 16px;
+  transition: background 0.3s ease;
+}
+
+.controls button:hover {
+  background: #50c9c3;
+  color: #fff;
+}
+
+/* Animación */
+@keyframes fade {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
