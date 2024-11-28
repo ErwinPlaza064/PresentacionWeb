@@ -31,6 +31,10 @@ p {
   text-align: center;
 }
 
+.slide_box {
+  display: flex;
+}
+
 /* Diapositivas */
 .slide {
   display: none;
@@ -39,8 +43,21 @@ p {
 
 .slide.active {
   display: flex;
-  flex-direction: column;
+  justify-content: center;
+  align-items: center;
   padding: 50px;
+  gap: 150px;
+}
+
+.box_vigilante {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.Img_vigilante {
+  width: 500px;
+  border-radius: 50%;
 }
 
 /* Botones */
